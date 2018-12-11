@@ -42,7 +42,7 @@
          * 6: Display the battery as plain text
          * default: 2
          -->
-    <integer name="def_battery_style">2</integer>
+    <integer name="def_battery_style">0</integer>
 
     <!-- Default for LineageSettings.Secure.LOCKSCREEN_VISUALIZER_ENABLED -->
     <bool name="def_lockscreen_visualizer">true</bool>
