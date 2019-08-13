@@ -24,6 +24,9 @@
          2. Left -->
     <integer name="def_qs_quick_pulldown">0</integer>
 
+    <!-- Default for LineageSettings.System.QS_QUICK_PD_OINN-->
+    <bool name="def_qs_quick_pd_oinn">false</bool>
+
     <!-- Default for LineageSettings.System.SYSTEM_PROFILES_ENABLED -->
     <bool name="def_profiles_enabled">true</bool>
 

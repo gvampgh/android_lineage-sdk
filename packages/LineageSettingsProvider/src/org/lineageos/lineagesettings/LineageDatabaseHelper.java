@@ -529,6 +529,9 @@ public class LineageDatabaseHelper extends SQLiteOpenHelper{
             loadIntegerSetting(stmt, LineageSettings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
                     R.integer.def_qs_quick_pulldown);
 
+            loadBooleanSetting(stmt, LineageSettings.System.STATUS_BAR_QUICK_QS_PD_OINN,
+                    R.bool.def_qs_quick_pd_oinn);
+
             loadIntegerSetting(stmt, LineageSettings.System.BATTERY_LIGHT_BRIGHTNESS_LEVEL,
                     R.integer.def_battery_brightness_level);
 
