@@ -37,6 +37,13 @@ public final class LineageSettings {
         public static final String QS_QUICK_PULLDOWN = "qs_quick_pulldown";
 
         /**
+         * Quick Settings Quick Pulldown only if no deletable notifications.
+         * 0 = 0ff, 1 = on
+         * @hide
+         */
+        public static final String QS_QUICK_PD_OINN = "qs_quick_pd_oinn";
+
+        /**
          * Whether to attach a queue to media notifications.
          * 0 = 0ff, 1 = on
          * @hide

@@ -1675,6 +1675,16 @@ public final class LineageSettings {
                 new InclusiveIntegerRangeValidator(0, 2);
 
         /**
+         * Whether to quick pull down quick settings only if no deletable notifications present.
+         * 0 = 0ff, 1 = on
+         */
+        public static final String STATUS_BAR_QUICK_QS_PD_OINN = "qs_quick_pd_oinn";
+
+        /** @hide */
+        public static final Validator STATUS_BAR_QUICK_QS_PD_OINN_VALIDATOR =
+                sBooleanValidator;
+
+        /**
          * Whether to show the brightness slider in quick settings panel.
          * 0 = 0ff, 1 = on
          */
@@ -2122,6 +2132,7 @@ public final class LineageSettings {
                 LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE,
                 LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_VALUES,
                 LineageSettings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
+                LineageSettings.System.STATUS_BAR_QUICK_QS_PD_OINN,
                 LineageSettings.System.VOLUME_ADJUST_SOUNDS_ENABLED,
                 LineageSettings.System.SYSTEM_PROFILES_ENABLED,
                 LineageSettings.System.INCREASING_RING,
@@ -2260,6 +2271,8 @@ public final class LineageSettings {
             VALIDATORS.put(STATUS_BAR_IME_SWITCHER, STATUS_BAR_IME_SWITCHER_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_QUICK_QS_PULLDOWN,
                     STATUS_BAR_QUICK_QS_PULLDOWN_VALIDATOR);
+            VALIDATORS.put(STATUS_BAR_QUICK_QS_PD_OINN,
+                    STATUS_BAR_QUICK_QS_PD_OINN_VALIDATOR);
             VALIDATORS.put(QS_SHOW_BRIGHTNESS_SLIDER, QS_SHOW_BRIGHTNESS_SLIDER_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_BRIGHTNESS_CONTROL,
                     STATUS_BAR_BRIGHTNESS_CONTROL_VALIDATOR);
