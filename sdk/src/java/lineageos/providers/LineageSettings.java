@@ -947,6 +947,17 @@ public final class LineageSettings {
                 new InclusiveIntegerRangeValidator(0, 2);
 
         /**
+         * Whether to show the battery percentage sign in the status bar.
+         * 0 = 0ff, 1 = on
+         */
+        public static final String STATUS_BAR_SHOW_BATTERY_PCT_SIGN =
+                "status_bar_show_battery_pct_sign";
+
+        /** @hide */
+        public static final Validator STATUS_BAR_SHOW_BATTERY_PCT_SIGN_VALIDATOR =
+                sBooleanValidator;
+
+        /**
          * Whether the phone ringtone should be played in an increasing manner
          * 0 = 0ff, 1 = on
          */
@@ -2142,6 +2153,7 @@ public final class LineageSettings {
                 LineageSettings.System.STATUS_BAR_AM_PM,
                 LineageSettings.System.STATUS_BAR_BATTERY_STYLE,
                 LineageSettings.System.STATUS_BAR_SHOW_BATTERY_PERCENT,
+                LineageSettings.System.STATUS_BAR_SHOW_BATTERY_PCT_SIGN,
                 LineageSettings.System.NAVIGATION_BAR_MENU_ARROW_KEYS,
                 LineageSettings.System.HEADSET_CONNECT_PLAYER,
                 LineageSettings.System.ZEN_ALLOW_LIGHTS,
@@ -2188,6 +2200,8 @@ public final class LineageSettings {
             VALIDATORS.put(STATUS_BAR_BATTERY_STYLE, STATUS_BAR_BATTERY_STYLE_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_SHOW_BATTERY_PERCENT,
                     STATUS_BAR_SHOW_BATTERY_PERCENT_VALIDATOR);
+            VALIDATORS.put(STATUS_BAR_SHOW_BATTERY_PCT_SIGN,
+                    STATUS_BAR_SHOW_BATTERY_PCT_SIGN_VALIDATOR);
             VALIDATORS.put(INCREASING_RING, INCREASING_RING_VALIDATOR);
             VALIDATORS.put(INCREASING_RING_START_VOLUME,
                     INCREASING_RING_START_VOLUME_VALIDATOR);
