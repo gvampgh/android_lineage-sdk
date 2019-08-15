@@ -102,6 +102,13 @@ public final class LineageSettings {
          * @hide
          */
         public static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
+
+        /**
+         * Whether to show the battery percentage sign in the status bar
+         * @hide
+         */
+        public static final String STATUS_BAR_SHOW_BATTERY_PCT_SIGN = "status_bar_show_battery_pct_sign";
+
         // endregion
 
         /**
@@ -721,6 +728,7 @@ public final class LineageSettings {
                 LineageSettings.System.STATUS_BAR_AM_PM,
                 LineageSettings.System.STATUS_BAR_BATTERY_STYLE,
                 LineageSettings.System.STATUS_BAR_SHOW_BATTERY_PERCENT,
+                LineageSettings.System.STATUS_BAR_SHOW_BATTERY_PCT_SIGN,
                 LineageSettings.System.NAVIGATION_BAR_MENU_ARROW_KEYS,
         };
 
