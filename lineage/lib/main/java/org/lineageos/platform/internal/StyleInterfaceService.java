@@ -106,7 +106,7 @@ public class StyleInterfaceService extends LineageSystemService {
     private int getGlobalStyleInternal() {
         return LineageSettings.System.getInt(mContext.getContentResolver(),
                 LineageSettings.System.BERRY_GLOBAL_STYLE,
-                StyleInterface.STYLE_GLOBAL_AUTO_WALLPAPER);
+                StyleInterface.STYLE_GLOBAL_DARK);
     }
 
     private boolean setAccentInternal(String pkgName) {
@@ -185,7 +185,7 @@ public class StyleInterfaceService extends LineageSystemService {
     }
 
     private boolean setDarkOverlayInternal(String overlayName) {
-        boolean isDefault = StyleInterface.OVERLAY_DARK_DEFAULT.equals(overlayName);
+        boolean isDefault = true;
         boolean isBlack = StyleInterface.OVERLAY_DARK_BLACK.equals(overlayName);
         int userId = UserHandle.myUserId();
 
